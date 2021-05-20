@@ -1,5 +1,5 @@
 import React from "react";
-import menu from "./hum-menu.png";
+import MenuOutlinedIcon from "@material-ui/icons/MenuOutlined";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
@@ -7,12 +7,20 @@ const useStyles = makeStyles({
     width: "100%",
     display: "flex",
     justifyContent: "space-between",
-    backgroundColor: "red",
+    backgroundColor: "#393E46",
     padding: "10px 20px",
+  },
+  logo: {
+    color: "#eee",
   },
   humMenu: {
     width: "32px",
     height: "32px",
+    color: "#eee",
+    "&:hover": {
+      color: "#00adb5",
+      transition: ".3s",
+    },
   },
 });
 
@@ -21,8 +29,8 @@ const Header = () => {
 
   return (
     <div className={classes.root}>
-      <h1>Logo</h1>
-      <img className={classes.humMenu} src={menu} alt="ハンバーガーメニュー" />
+      <h1 className={classes.logo}>P.o.Y.K</h1>
+      <MenuOutlinedIcon className={classes.humMenu} />
     </div>
   );
 };
