@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../component/button/Button";
+import ClickButton from "../../component/button/ClickButton";
 import scss from "./about.module.scss";
 import WorkImg from "../../component/workImg/WorkImg";
 
@@ -13,14 +13,14 @@ const About = () => {
         front-end engineer. I want to create a service that can improve people's
         problems.
       </p>
-      <Button label={"ABOUT MORE"} />
+      <ClickButton label={"ABOUT MORE"} style={{}} />
       <WorkImg />
       <WorkImg />
       <WorkImg />
       <WorkImg />
       <WorkImg />
       <WorkImg />
-      <Button label={"WORKS"} className={scss.workButton} />
+      <ClickButton label={"WORKS"} style={{ margin: "0 auto" }} />
     </div>
   );
 };
