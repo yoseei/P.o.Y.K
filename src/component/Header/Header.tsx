@@ -17,9 +17,10 @@ const useStyles = makeStyles({
     width: "32px",
     height: "32px",
     color: "#eee",
+    marginTop: "5px",
+    transition: ".3s",
     "&:hover": {
       color: "#00adb5",
-      transition: ".3s",
     },
   },
 });

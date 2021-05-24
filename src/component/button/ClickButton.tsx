@@ -1,5 +1,5 @@
 import React from "react";
-import scss from "./button.module.scss";
+import scss from "./clickButton.module.scss";
 
 interface Props {
   label: string;
@@ -9,7 +9,7 @@ interface Props {
 const ClickButton: React.FC<Props> = (props) => {
   return (
     <>
-      <div className={scss.button} style={props.style}>
+      <div className={scss.clickButton} style={props.style}>
         {props.label}
       </div>
     </>

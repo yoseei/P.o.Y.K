@@ -19,3 +19,17 @@
   bottom: 0;
   position: absolute;
 }
+
+@media screen and (min-width: 600px) {
+  .container {
+    .drPhoto {
+      height: 300px;
+      width: 300px;
+    }
+    .txt {
+      bottom: -90px;
+      left: 50px;
+      font-size: 4.5rem;
+    }
+  }
+}

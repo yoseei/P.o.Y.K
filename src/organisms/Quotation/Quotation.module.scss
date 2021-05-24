@@ -13,3 +13,20 @@
     padding-top: 20px;
   }
 }
+
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 70px;
+    height: 250px;
+    .quoteContainer {
+      margin: 60px 0 0 40px;
+      .quote {
+        padding-top: 0;
+        font-size: 20px;
+        text-align: left;
+      }
+    }
+  }
+}

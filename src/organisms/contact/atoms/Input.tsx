@@ -10,7 +10,7 @@ const useStyles = makeStyles({
     display: "block",
     fontSize: "1.25rem",
     height: "32px",
-    width: "80%",
+    width: "100%",
     margin: "0 auto",
     outline: "none",
     fontWeight: "lighter",

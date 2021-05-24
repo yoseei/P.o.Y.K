@@ -12,6 +12,10 @@ p {
   padding: 0;
 }
 
+a {
+  color: rgb(19, 19, 19);
+}
+
 div {
   width: 100%;
   margin: 0;

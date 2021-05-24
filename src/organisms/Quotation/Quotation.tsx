@@ -6,10 +6,12 @@ const Quotation = () => {
   return (
     <div className="root">
       <div className={scss.container}>
-        <p className={scss.quote}>
-          "It always seems impossible <br></br> until it's done."
-        </p>
-        <p className={scss.name}>- Nelson Mandela -</p>
+        <div className={scss.quoteContainer}>
+          <p className={scss.quote}>
+            "It always seems impossible <br></br> until it's done."
+          </p>
+          <p className={scss.name}>- Nelson Mandela -</p>
+        </div>
         <ProfilePhoto />
       </div>
     </div>
