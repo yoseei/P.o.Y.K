@@ -1,5 +1,26 @@
+.root {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #393e46;
+  padding: 10px 20px;
+  .logo {
+    color: #eee;
+  }
+  .humMenu {
+    width: 32px;
+    height: 32px;
+    color: #eee;
+    margin-top: 5px;
+    transition: 0.3s;
+    &:hover {
+      color: #00adb5;
+    }
+  }
+}
+
 @media screen and (min-width: 600px) {
   .root {
-    padding: 10px 60px;
+    padding: 10px 70px;
   }
 }

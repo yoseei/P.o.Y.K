@@ -1,6 +1,5 @@
 import React from "react";
 import Input from "../atoms/Input";
-import { makeStyles } from "@material-ui/core";
 import TextInput from "../atoms/TextInput";
 import ClickButton from "../../../component/button/ClickButton";
 import ContactMe from "../atoms/ContactMe";
@@ -12,24 +11,10 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 
 import scss from "./contact.module.scss";
 
-const useStyles = makeStyles({
-  root: {
-    padding: "40px 40px",
-    width: "100%",
-    height: "500px",
-    backgroundColor: "#00ADB5",
-  },
-  contactMe: {
-    color: "#393E46",
-  },
-});
-
 const Contact = () => {
-  const classes = useStyles();
-
   return (
-    <div className={classes.root}>
-      <div>
+    <div className={scss.root}>
+      <div className={scss.inputContainer}>
         <Input placeholder={"your Name"} />
         <Input placeholder={"email"} />
         <TextInput />
@@ -43,8 +28,8 @@ const Contact = () => {
           }}
         />
       </div>
-      <div>
-        <ContactMe value={"CONTACT ME"} className={classes.contactMe} />
+      <div className={scss.iconContainer}>
+        <ContactMe value={"CONTACT ME"} className={scss.contactMe} />
         <a href="https://www.instagram.com/?hl=ja">
           <InstagramIcon style={{ marginRight: "20px", marginLeft: "10px" }} />
         </a>
