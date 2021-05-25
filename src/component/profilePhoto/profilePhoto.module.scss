@@ -33,3 +33,16 @@
     }
   }
 }
+@media screen and (min-width: 1025px) {
+  .container {
+    .drPhoto {
+      width: 450px;
+      height: 250px;
+    }
+    .txt {
+      bottom: -120px;
+      left: 100px;
+      font-size: 7rem;
+    }
+  }
+}

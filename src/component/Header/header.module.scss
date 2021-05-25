@@ -21,6 +21,19 @@
 
 @media screen and (min-width: 600px) {
   .root {
-    padding: 10px 70px;
+    padding: 20px 70px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .root {
+    padding: 10px 200px;
+    .logo {
+      font-size: 2rem;
+    }
+    .humMenu {
+      width: 34px;
+      height: 34px;
+    }
   }
 }

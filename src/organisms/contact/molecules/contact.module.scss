@@ -24,3 +24,14 @@
     }
   }
 }
+
+@media screen and (min-width: 1025px) {
+  .root {
+    padding: 20px 200px;
+    .iconContainer {
+      .contactMe {
+        font-size: 2rem;
+      }
+    }
+  }
+}

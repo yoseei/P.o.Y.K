@@ -31,16 +31,36 @@ const Contact = () => {
       <div className={scss.iconContainer}>
         <ContactMe value={"CONTACT ME"} className={scss.contactMe} />
         <a href="https://www.instagram.com/?hl=ja">
-          <InstagramIcon style={{ marginRight: "20px", marginLeft: "10px" }} />
+          <InstagramIcon
+            style={{
+              marginRight: "20px",
+              marginLeft: "10px",
+              fontSize: "2rem",
+            }}
+          />
         </a>
         <a href="https://twitter.com/yk_engineer">
-          <TwitterIcon style={{ marginRight: "20px" }} />
+          <TwitterIcon
+            style={{
+              marginRight: "20px",
+              fontSize: "2rem",
+            }}
+          />
         </a>
         <a href="https://www.facebook.com/yoseei.drums">
-          <FacebookIcon style={{ marginRight: "20px" }} />
+          <FacebookIcon
+            style={{
+              marginRight: "20px",
+              fontSize: "2rem",
+            }}
+          />
         </a>
         <a href="https://github.com/yoseei">
-          <GitHubIcon />
+          <GitHubIcon
+            style={{
+              fontSize: "2rem",
+            }}
+          />
         </a>
       </div>
     </div>

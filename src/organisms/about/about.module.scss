@@ -31,3 +31,30 @@
     }
   }
 }
+
+@media screen and (min-width: 1025px) {
+  .container {
+    padding: 150px 200px 20px;
+    .textContainer {
+      padding: 0 10%;
+      h1 {
+        font-size: 7rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.5rem;
+        padding-right: 30%;
+      }
+    }
+    .workImgContainer {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      .workImg {
+        width: 33.3%;
+      }
+    }
+  }
+}
