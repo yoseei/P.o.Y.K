@@ -140,10 +140,14 @@ export default function PersistentDrawerRight() {
                 <a className={classes.rightMenuLink}>HOME</a>
               </li>
               <li className={classes.rightMenuList}>
-                <a className={classes.rightMenuLink}>ABOUT</a>
+                <a href="#" className={classes.rightMenuLink}>
+                  ABOUT
+                </a>
               </li>
               <li className={classes.rightMenuList}>
-                <a className={classes.rightMenuLink}>WORKS</a>
+                <a href="#" className={classes.rightMenuLink}>
+                  WORKS
+                </a>
               </li>
             </ul>
           </div>

@@ -26,6 +26,7 @@ const Contact = () => {
             marginTop: "20px",
             marginBottom: "60px",
           }}
+          onClick={""}
         />
       </div>
       <div className={scss.iconContainer}>

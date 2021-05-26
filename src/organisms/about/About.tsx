@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "../../component/modal/Modal";
 import ClickButton from "../../component/button/ClickButton";
 import scss from "./about.module.scss";
 import WorkImg from "../../component/workImg/WorkImg";
 
 const About = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const ShowModal = () => {
+    setShowModal(true);
+  };
+
   return (
     <div className={scss.container}>
+      <Modal
+        showFlag={showModal}
+        setShowModal={setShowModal}
+        content="親から渡されたコンポーネントです。"
+      />
       <div className={scss.textContainer}>
         <h1>about</h1>
         <h2>name Y.K</h2>
@@ -20,6 +32,7 @@ const About = () => {
             width: "150px",
             margin: "30px 0 60px",
           }}
+          onClick={ShowModal}
         />
       </div>
       <div className={scss.workImgContainer}>
@@ -48,6 +61,7 @@ const About = () => {
           margin: "40px auto",
           width: "150px",
         }}
+        onClick={""}
       />
     </div>
   );
