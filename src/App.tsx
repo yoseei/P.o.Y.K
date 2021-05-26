@@ -1,16 +1,18 @@
 import React from "react";
-import Header from "./component/Header/Header";
+// import Header from "./component/Header/Header";
 import Quotation from "./organisms/Quotation/Quotation";
 import About from "./organisms/about/About";
 import Contact from "./organisms/contact/molecules/Contact";
 import Footer from "./component/footer/Footer";
 
 import "./App.module.css";
+import PersistentDrawerRight from "./component/Header/Header2";
 
 const App = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
+      <PersistentDrawerRight />
       <Quotation />
       <About />
       <Contact />

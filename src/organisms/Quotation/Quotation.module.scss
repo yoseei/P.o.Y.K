@@ -18,8 +18,8 @@
   .container {
     display: flex;
     flex-direction: row-reverse;
-    padding: 20px 70px;
-    height: 250px;
+    padding: 90px 70px 0;
+    height: 360px;
     .quoteContainer {
       margin: 60px 0 0 40px;
       .quote {
@@ -32,8 +32,8 @@
 }
 @media screen and (min-width: 1025px) {
   .container {
-    padding: 20px 200px;
-    height: 230px;
+    padding: 90px 200px 0;
+    height: 325px;
     .quoteContainer {
       margin: 60px 0 0 80px;
       .quote {

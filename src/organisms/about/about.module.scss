@@ -1,13 +1,16 @@
 .container {
   padding: 150px 20px 20px;
   background-color: #393e46;
-  h1,
-  h2,
-  p {
-    color: #eee;
-  }
-  h1 {
-    font-size: 4rem;
+  .textContainer {
+    padding: 0 20px;
+    h1,
+    h2,
+    p {
+      color: #eee;
+    }
+    h1 {
+      font-size: 4rem;
+    }
   }
 }
 
@@ -16,7 +19,7 @@
     padding: 150px 70px 20px;
 
     .textContainer {
-      padding: 0 50px;
+      padding: 0 75px;
       h2 {
         padding: 10px 0 30px;
       }
