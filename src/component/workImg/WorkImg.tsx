@@ -1,10 +1,16 @@
 import React from "react";
 import scss from "./workImg.module.scss";
 
-const WorkImg = () => {
+interface Props {
+  onClick: any;
+  value: number;
+}
+const WorkImg: React.FC<Props> = (props) => {
   return (
-    <div className={scss.root}>
-      <div className={scss.container}>{/* <img src={} /> */}</div>
+    <div className={scss.root} onClick={props.onClick}>
+      <div className={scss.container} onClick={props.onClick}>
+        <p>{props.value}</p>
+      </div>
     </div>
   );
 };

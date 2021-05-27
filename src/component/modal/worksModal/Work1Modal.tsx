@@ -1,10 +1,10 @@
 import React from "react";
-import ClickButton from "../button/ClickButton";
-import scss from "./worksModal.module.scss";
+import ClickButton from "../../button/ClickButton";
+import scss from "./work1Modal.module.scss";
 
-const WorksModal = (props: any) => {
+const Work1Modal = (props: any) => {
   const closeModal = () => {
-    props.setShowWorksModal(false);
+    props.setShowWork1Modal(false);
   };
 
   return (
@@ -12,7 +12,7 @@ const WorksModal = (props: any) => {
       {props.showFlag ? (
         <div className={scss.container}>
           <div className={scss.modalContent}>
-            <div className={scss.imgContainer}>写真</div>
+            <div className={scss.imgContainer}>写真1</div>
             <h2 className={scss.appName}>app</h2>
             <p className={scss.aboutApp}>test</p>
             <ClickButton
@@ -33,4 +33,4 @@ const WorksModal = (props: any) => {
   );
 };
 
-export default WorksModal;
+export default Work1Modal;
