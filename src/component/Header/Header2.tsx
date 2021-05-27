@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       display: "flex",
       position: "relative",
+      zIndex: 1,
     },
     MuiToolBar: {
       background: "#393E46",
@@ -137,17 +138,13 @@ export default function PersistentDrawerRight() {
           <div>
             <ul className={classes.rightMenuUl}>
               <li className={classes.rightMenuList}>
-                <a className={classes.rightMenuLink}>HOME</a>
+                <p className={classes.rightMenuLink}>HOME</p>
               </li>
               <li className={classes.rightMenuList}>
-                <a href="#" className={classes.rightMenuLink}>
-                  ABOUT
-                </a>
+                <p className={classes.rightMenuLink}>ABOUT</p>
               </li>
               <li className={classes.rightMenuList}>
-                <a href="#" className={classes.rightMenuLink}>
-                  WORKS
-                </a>
+                <p className={classes.rightMenuLink}>WORKS</p>
               </li>
             </ul>
           </div>

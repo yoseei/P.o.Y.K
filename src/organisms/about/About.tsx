@@ -1,22 +1,31 @@
 import React, { useState } from "react";
-import Modal from "../../component/modal/Modal";
+import AboutModal from "../../component/modal/AboutModal";
 import ClickButton from "../../component/button/ClickButton";
 import scss from "./about.module.scss";
 import WorkImg from "../../component/workImg/WorkImg";
+import WorksModal from "../../component/modal/WorksModal";
 
 const About = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [showAboutModal, setShowAboutModal] = useState(false),
+    [showWorksModal, setShowWorksModal] = useState(false);
 
-  const ShowModal = () => {
-    setShowModal(true);
+  const ShowAboutModal = () => {
+    setShowAboutModal(true);
+  };
+
+  const ShowWorksModal = () => {
+    setShowWorksModal(true);
   };
 
   return (
     <div className={scss.container}>
-      <Modal
-        showFlag={showModal}
-        setShowModal={setShowModal}
-        content="親から渡されたコンポーネントです。"
+      <AboutModal
+        showFlag={showAboutModal}
+        setShowAboutModal={setShowAboutModal}
+      />
+      <WorksModal
+        showFlag={showWorksModal}
+        setShowWorksModal={setShowWorksModal}
       />
       <div className={scss.textContainer}>
         <h1>about</h1>
@@ -32,7 +41,7 @@ const About = () => {
             width: "150px",
             margin: "30px 0 60px",
           }}
-          onClick={ShowModal}
+          onClick={() => ShowAboutModal()}
         />
       </div>
       <div className={scss.workImgContainer}>
@@ -61,7 +70,7 @@ const About = () => {
           margin: "40px auto",
           width: "150px",
         }}
-        onClick={""}
+        onClick={() => ShowWorksModal()}
       />
     </div>
   );

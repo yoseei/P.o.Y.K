@@ -4,7 +4,7 @@ import scss from "./footer.module.scss";
 const Footer = () => {
   return (
     <div className={scss.root}>
-      <a href="#">©2021 Y.K</a>
+      <p>©2021 Y.K</p>
     </div>
   );
 };

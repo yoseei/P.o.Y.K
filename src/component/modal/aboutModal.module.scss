@@ -1,0 +1,47 @@
+.modalContent {
+  box-sizing: border-box;
+  background: #393e46;
+  color: #eee;
+  padding: 20px 20px;
+  height: 80vh;
+  width: 80%;
+  .imgContainer {
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    background-color: white;
+    box-sizing: content-box;
+  }
+  .myName {
+    display: block;
+    margin: 10px 0;
+    font-weight: 100;
+  }
+  .myProfile {
+    display: block;
+    margin: 20px 10px 30px;
+  }
+  .button {
+    width: 50%;
+    height: 45px;
+    background: #00adb5;
+    margin: 0 auto;
+    display: block;
+    transition: 0.3s;
+    &:hover {
+      background-color: #eee;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .modalContent {
+    height: 60vh;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .modalContent {
+    height: 80vh;
+    width: 25%;
+  }
+}
