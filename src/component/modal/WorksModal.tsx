@@ -18,11 +18,8 @@ const WorksModal = (props: any) => {
             <ClickButton
               style={{
                 width: "50%",
-                height: "45px",
-                background: "#00adb5",
+                color: "#000",
                 margin: "0 auto",
-                display: "block",
-                transition: "0.3s",
               }}
               onClick={() => closeModal()}
               label={"BACK"}

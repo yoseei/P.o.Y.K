@@ -1,6 +1,7 @@
 import React from "react";
 import { Property } from "csstype";
 import scss from "./aboutModal.module.scss";
+import ClickButton from "../button/ClickButton";
 
 const AboutModal = (props: any) => {
   const closeModal = () => {
@@ -38,9 +39,18 @@ const AboutModal = (props: any) => {
               現在は、フロントエンドエンジニアへの転職を 目指して日々奮闘中。
               趣味は読書、英語、カメラ、ロードバイクなど。
             </p>
-            <button className={scss.button} onClick={() => closeModal()}>
+            <ClickButton
+              label={"BACK"}
+              style={{
+                width: "50%",
+                color: "#000",
+                margin: "0 auto",
+              }}
+              onClick={() => closeModal()}
+            />
+            {/* <button className={scss.button} onClick={() => closeModal()}>
               BACK
-            </button>
+            </button> */}
           </div>
         </div>
       ) : (
