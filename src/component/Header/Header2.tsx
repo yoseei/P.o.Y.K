@@ -44,9 +44,6 @@ const useStyles = makeStyles((theme: Theme) =>
       }),
       marginRight: drawerWidth,
     },
-    title: {
-      flexGrow: 1,
-    },
     hide: {
       display: "none",
     },
@@ -58,15 +55,7 @@ const useStyles = makeStyles((theme: Theme) =>
       width: drawerWidth,
       background: "rgb(24,23,22)",
     },
-    drawerHeader: {
-      display: "flex",
-      flexDirection: "column",
-    },
-    MuiSvgIcon: {
-      color: "#eee",
-      fontSize: "1.5rem",
-      margin: "15px 20px",
-    },
+
     rightMenuUl: {
       display: "block",
       padding: "0",
@@ -104,7 +93,7 @@ export default function PersistentDrawerRight() {
         })}
       >
         <Toolbar className={classes.MuiToolBar} id={scss.MuiToolBar}>
-          <Typography variant="h6" noWrap className={classes.title}>
+          <Typography variant="h6" noWrap className={scss.title}>
             P.o.Y.K
           </Typography>
           <IconButton
@@ -114,7 +103,7 @@ export default function PersistentDrawerRight() {
             onClick={handleDrawerOpen}
             className={clsx(open && classes.hide)}
           >
-            <MenuIcon />
+            <MenuIcon className={scss.MenuIcon} />
           </IconButton>
         </Toolbar>
       </AppBar>
@@ -127,8 +116,8 @@ export default function PersistentDrawerRight() {
           paper: classes.drawerPaper,
         }}
       >
-        <div className={classes.drawerHeader}>
-          <CloseIcon className={classes.MuiSvgIcon} onClick={handleDrawerClose}>
+        <div className={scss.drawerHeader}>
+          <CloseIcon className={scss.MuiSvgIcon} onClick={handleDrawerClose}>
             {theme.direction === "rtl" ? (
               <ChevronLeftIcon />
             ) : (

@@ -1,10 +1,65 @@
+#MuiToolBar {
+  padding: 0 20px;
+  .title {
+    flex-grow: 1;
+    font-size: 2rem;
+  }
+  .MenuIcon {
+    font-size: 2rem;
+  }
+}
+.drawerHeader {
+  display: flex;
+  flex-direction: column;
+
+  .MuiSvgIcon {
+    color: #eee;
+    font-size: 2rem;
+    margin: 15px 20px;
+  }
+}
+
 @media screen and (min-width: 600px) {
   #MuiToolBar {
     padding: 0 75px;
+    .title {
+      flex-grow: 1;
+      font-size: 2rem;
+    }
+    .MenuIcon {
+      font-size: 2rem;
+    }
+  }
+  .drawerHeader {
+    display: flex;
+    flex-direction: column;
+
+    .MuiSvgIcon {
+      color: #eee;
+      font-size: 2rem;
+      margin: 15px 20px;
+    }
   }
 }
 @media screen and (min-width: 1025px) {
   #MuiToolBar {
     padding: 0 200px;
+    .title {
+      flex-grow: 1;
+      font-size: 2rem;
+    }
+    .MenuIcon {
+      font-size: 2rem;
+    }
+  }
+  .drawerHeader {
+    display: flex;
+    flex-direction: column;
+
+    .MuiSvgIcon {
+      color: #eee;
+      font-size: 2rem;
+      margin: 15px 20px;
+    }
   }
 }
