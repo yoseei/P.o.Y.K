@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Input from "../atoms/Input";
 import TextInput from "../atoms/TextInput";
 import ClickButton from "../../../component/button/ClickButton";
 import ContactMe from "../atoms/ContactMe";
+import SentMessage from "../../../component/modal/sentMessage/SentMessage";
 
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
@@ -12,9 +13,16 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import scss from "./contact.module.scss";
 
 const Contact = () => {
+  const [showSentMessage, setShowSentMessage] = useState(false);
+
+  const handleShowSentMessage = () => {
+    setShowSentMessage(true);
+  };
+
   return (
     <div className={scss.root}>
       <div className={scss.inputContainer}>
+        <SentMessage showFlag={showSentMessage} />
         <Input placeholder={"your Name"} />
         <Input placeholder={"email"} />
         <TextInput />
@@ -23,10 +31,10 @@ const Contact = () => {
           style={{
             border: "1px solid #393E46",
             width: "150px",
-            marginTop: "20px",
+            marginTop: "10px",
             marginBottom: "60px",
           }}
-          onClick={""}
+          onClick={handleShowSentMessage}
         />
       </div>
       <div className={scss.iconContainer}>
