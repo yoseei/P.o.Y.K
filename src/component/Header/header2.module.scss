@@ -17,6 +17,17 @@
     font-size: 2rem;
     margin: 15px 20px;
   }
+  .rightMenuUl {
+    display: block;
+    padding: 0;
+    margin: 5px 20px;
+    font-size: 1rem;
+    text-align: center;
+    .rightMenuList {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -39,6 +50,17 @@
       font-size: 2rem;
       margin: 15px 20px;
     }
+    .rightMenuUl {
+      display: block;
+      padding: 0;
+      margin: 5px 20px;
+      font-size: 1.5rem;
+      text-align: center;
+      .rightMenuList {
+        list-style: none;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 @media screen and (min-width: 1025px) {
@@ -55,11 +77,21 @@
   .drawerHeader {
     display: flex;
     flex-direction: column;
-
     .MuiSvgIcon {
       color: #eee;
       font-size: 2rem;
       margin: 15px 20px;
+    }
+    .rightMenuUl {
+      display: block;
+      padding: 0;
+      margin: 5px 20px;
+      font-size: 2rem;
+      text-align: center;
+      .rightMenuList {
+        list-style: none;
+        margin-bottom: 20px;
+      }
     }
   }
 }

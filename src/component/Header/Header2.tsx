@@ -56,15 +56,17 @@ const useStyles = makeStyles((theme: Theme) =>
       background: "rgb(24,23,22)",
     },
 
-    rightMenuUl: {
-      display: "block",
-      padding: "0",
-      margin: "5px 20px",
-    },
-    rightMenuList: {
-      listStyle: "none",
-      marginBottom: "10px",
-    },
+    // rightMenuUl: {
+    //   display: "block",
+    //   padding: "0",
+    //   margin: "5px 20px",
+    //   fontSize: "2rem",
+    //   textAlign: "center",
+    // },
+    // rightMenuList: {
+    //   listStyle: "none",
+    //   marginBottom: "10px",
+    // },
     rightMenuLink: {
       color: "#eee",
     },
@@ -125,14 +127,14 @@ export default function PersistentDrawerRight() {
             )}
           </CloseIcon>
           <div>
-            <ul className={classes.rightMenuUl}>
-              <li className={classes.rightMenuList}>
+            <ul className={scss.rightMenuUl}>
+              <li className={scss.rightMenuList}>
                 <p className={classes.rightMenuLink}>HOME</p>
               </li>
-              <li className={classes.rightMenuList}>
+              <li className={scss.rightMenuList}>
                 <p className={classes.rightMenuLink}>ABOUT</p>
               </li>
-              <li className={classes.rightMenuList}>
+              <li className={scss.rightMenuList}>
                 <p className={classes.rightMenuLink}>WORKS</p>
               </li>
             </ul>
