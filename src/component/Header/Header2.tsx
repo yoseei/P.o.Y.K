@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import scss from "./header2.module.scss";
 import clsx from "clsx";
 import {
@@ -17,6 +17,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
 import CloseIcon from "@material-ui/icons/Close";
+import Overlay from "./Overlay";
 
 const drawerWidth = "30%";
 
@@ -55,18 +56,6 @@ const useStyles = makeStyles((theme: Theme) =>
       width: drawerWidth,
       background: "rgb(24,23,22)",
     },
-
-    // rightMenuUl: {
-    //   display: "block",
-    //   padding: "0",
-    //   margin: "5px 20px",
-    //   fontSize: "2rem",
-    //   textAlign: "center",
-    // },
-    // rightMenuList: {
-    //   listStyle: "none",
-    //   marginBottom: "10px",
-    // },
     rightMenuLink: {
       color: "#eee",
     },
@@ -76,18 +65,22 @@ const useStyles = makeStyles((theme: Theme) =>
 export default function PersistentDrawerRight() {
   const classes = useStyles();
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false),
+    [overlay, setOverlay] = useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
+    setOverlay(true);
   };
 
   const handleDrawerClose = () => {
     setOpen(false);
+    setOverlay(false);
   };
 
   return (
     <div className={classes.root}>
+      <Overlay overlayFlag={overlay} />
       <AppBar
         position="fixed"
         className={clsx(classes.appBar, {
