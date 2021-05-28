@@ -1,5 +1,5 @@
 .container {
-  padding: 150px 20px 20px;
+  padding: 150px 20px 60px;
   background-color: #393e46;
   .textContainer {
     padding: 0 20px;
@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 600px) {
   .container {
-    padding: 150px 70px 20px;
+    padding: 150px 70px 60px;
 
     .textContainer {
       padding: 0 75px;
@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 1025px) {
   .container {
-    padding: 150px 200px 20px;
+    padding: 150px 200px 80px;
     .textContainer {
       padding: 0 10%;
       h1 {

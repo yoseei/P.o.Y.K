@@ -6,7 +6,7 @@ const SentMessage = (props: any) => {
     <>
       {props.showFlag ? (
         <div className={scss.container}>
-          <p>送信が完了しました。</p>
+          <p>Your message was successfully sent!</p>
         </div>
       ) : (
         <></>
