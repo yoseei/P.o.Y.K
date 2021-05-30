@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import Input from "../atoms/Input";
-import TextInput from "../atoms/TextInput";
-import ClickButton from "../../../component/button/ClickButton";
+import ReactDOM from "react-dom";
+import { useForm } from "react-hook-form";
+
+// import Input from "../atoms/Input";
+// import TextInput from "../atoms/TextInput";
+// import ClickButton from "../../../component/button/ClickButton";
 import ContactMe from "../atoms/ContactMe";
 import SentMessage from "../../../component/modal/sentMessage/SentMessage";
 
@@ -19,23 +22,60 @@ const Contact = () => {
     setShowSentMessage(true);
   };
 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data: any) => {
+    console.log(data);
+    return handleShowSentMessage();
+  };
+  console.log(errors);
+
   return (
     <div className={scss.root}>
       <div className={scss.inputContainer}>
         <SentMessage showFlag={showSentMessage} />
-        <Input placeholder={"your Name"} />
-        <Input placeholder={"email"} />
-        <TextInput />
-        <ClickButton
-          label={"SEND"}
-          style={{
-            border: "1px solid #393E46",
-            width: "150px",
-            marginTop: "10px",
-            marginBottom: "60px",
-          }}
-          onClick={handleShowSentMessage}
-        />
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <p className={scss.validateMsg}>
+            {errors.YourName?.type === "required" && "*Your Name is required"}
+          </p>
+
+          <input
+            className={scss.input}
+            type="text"
+            placeholder="Your Name"
+            {...register("YourName", {
+              required: true,
+              maxLength: 80,
+            })}
+          />
+          <p className={scss.validateMsg}>
+            {errors.Email?.type === "required" && "*Email is required."}
+          </p>
+          <input
+            className={scss.input}
+            type="text"
+            placeholder="Email"
+            {...register("Email", {
+              required: true,
+              pattern: /^\S+@\S+$/i,
+            })}
+          />
+          <p className={scss.validateMsg}>
+            {errors.Message?.type === "required" && "*Message is required"}
+          </p>
+          <textarea
+            className={scss.textarea}
+            placeholder="Message"
+            {...register("Message", {
+              required: true,
+            })}
+          />
+
+          <input className={scss.submitBtn} type="submit" value="Submit" />
+        </form>
       </div>
       <div className={scss.iconContainer}>
         <ContactMe value={"CONTACT ME"} className={scss.contactMe} />
