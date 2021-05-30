@@ -21,6 +21,7 @@
     width: 80%;
     .imgContainer {
       color: #000;
+      border-radius: 10px;
       width: 100%;
       height: 150px;
       margin: 0;
@@ -28,11 +29,13 @@
       box-sizing: content-box;
     }
     .appName {
+      font-family: "Ludica Sans Unicode";
       display: block;
       margin: 10px 0;
       font-weight: 100;
     }
     .aboutApp {
+      font-family: "Ludica Sans Unicode";
       display: block;
       margin: 20px 10px 30px;
     }

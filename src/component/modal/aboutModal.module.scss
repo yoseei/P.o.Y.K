@@ -7,17 +7,20 @@
   width: 80%;
   .imgContainer {
     width: 100%;
+    border-radius: 10px;
     height: 150px;
     margin: 0;
     background-color: white;
     box-sizing: content-box;
   }
   .myName {
+    font-family: "Ludica Sans Unicode";
     display: block;
     margin: 10px 0;
     font-weight: 100;
   }
   .myProfile {
+    font-family: "Ludica Sans Unicode";
     display: block;
     margin: 20px 10px 30px;
   }
