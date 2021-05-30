@@ -52,6 +52,8 @@ const Contact = () => {
             })}
           />
           <p className={scss.validateMsg}>
+            {errors.Email?.type === "pattern" &&
+              "*Please enter a valid email address."}
             {errors.Email?.type === "required" && "*Email is required."}
           </p>
           <input
@@ -60,7 +62,8 @@ const Contact = () => {
             placeholder="Email"
             {...register("Email", {
               required: true,
-              pattern: /^\S+@\S+$/i,
+              pattern:
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
             })}
           />
           <p className={scss.validateMsg}>
