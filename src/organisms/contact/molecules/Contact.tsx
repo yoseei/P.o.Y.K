@@ -1,10 +1,6 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 import { useForm } from "react-hook-form";
 
-// import Input from "../atoms/Input";
-// import TextInput from "../atoms/TextInput";
-// import ClickButton from "../../../component/button/ClickButton";
 import ContactMe from "../atoms/ContactMe";
 import SentMessage from "../../../component/modal/sentMessage/SentMessage";
 
@@ -28,10 +24,8 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data: any) => {
-    console.log(data);
     return handleShowSentMessage();
   };
-  console.log(errors);
 
   return (
     <div className={scss.root}>

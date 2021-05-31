@@ -68,8 +68,7 @@ export default function PersistentDrawerRight() {
   const theme = useTheme();
   const [open, setOpen] = useState(false),
     [overlay, setOverlay] = useState(false),
-    [showAboutModal, setShowAboutModal] = useState(false),
-    [showHome, setShowHome] = useState(false);
+    [showAboutModal, setShowAboutModal] = useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -92,12 +91,12 @@ export default function PersistentDrawerRight() {
     setOpen(false);
     setOverlay(false);
   };
+
   return (
     <div className={classes.root}>
       <AboutModal
         showFlag={showAboutModal}
         setShowAboutModal={setShowAboutModal}
-        style={{ zIndex: "20" }}
       />
       <Overlay overlayFlag={overlay} />
       <AppBar
@@ -153,9 +152,9 @@ export default function PersistentDrawerRight() {
                   ABOUT
                 </p>
               </li>
-              <li className={scss.rightMenuList}>
+              {/* <li className={scss.rightMenuList}>
                 <p className={classes.rightMenuLink}>WORKS</p>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

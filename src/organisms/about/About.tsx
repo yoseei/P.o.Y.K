@@ -110,14 +110,6 @@ const About = () => {
           <WorkImg value={6} onClick={() => ShowWork6Modal()} />
         </div>
       </div>
-      {/* <ClickButton
-        label={"WORKS"}
-        style={{
-          margin: "40px auto",
-          width: "150px",
-        }}
-        onClick={() => ShowWorksModal()}
-      /> */}
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { Property } from "csstype";
 import scss from "./aboutModal.module.scss";
 import ClickButton from "../button/ClickButton";
+import MyPhoto from "./yoseei_drums.jpg";
 
 const AboutModal = (props: any) => {
   const closeModal = () => {
@@ -29,7 +30,9 @@ const AboutModal = (props: any) => {
       {props.showFlag ? (
         <div id="overlay" style={overlay}>
           <div id="modalContent" className={scss.modalContent}>
-            <div className={scss.imgContainer}></div>
+            <div className={scss.imgContainer}>
+              <img src={MyPhoto} className={scss.MyPhoto} alt="profile写真" />
+            </div>
             <h2 className={scss.myName}>Yoshitaka Kai</h2>
             <p className={scss.myProfile}>
               「ドラムで飯を食う」という目標をかかげ 15歳からドラムを始める。

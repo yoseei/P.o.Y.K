@@ -3,15 +3,20 @@
   background: #393e46;
   color: #eee;
   padding: 20px 20px;
-  height: 80vh;
+  height: 85vh;
   width: 80%;
+  margin-top: 50px;
   .imgContainer {
     width: 100%;
     border-radius: 10px;
-    height: 150px;
+    height: 185px;
     margin: 0;
     background-color: white;
     box-sizing: content-box;
+    .MyPhoto {
+      width: 100%;
+      height: 100%;
+    }
   }
   .myName {
     font-family: "Ludica Sans Unicode";
@@ -38,7 +43,7 @@
 }
 @media screen and (min-width: 600px) {
   .modalContent {
-    height: 60vh;
+    height: 63vh;
     width: 45%;
   }
 }
