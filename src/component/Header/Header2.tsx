@@ -152,9 +152,6 @@ export default function PersistentDrawerRight() {
                   ABOUT
                 </p>
               </li>
-              {/* <li className={scss.rightMenuList}>
-                <p className={classes.rightMenuLink}>WORKS</p>
-              </li> */}
             </ul>
           </div>
         </div>
