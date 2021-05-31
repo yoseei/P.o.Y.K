@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-tsportforio-dev-135922-authRole",
+            "UnauthRoleArn": "arn:aws:iam::190997658975:role/amplify-tsportforio-dev-135922-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::190997658975:role/amplify-tsportforio-dev-135922-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-tsportforio-dev-135922-deployment",
+            "UnauthRoleName": "amplify-tsportforio-dev-135922-unauthRole",
+            "StackName": "amplify-tsportforio-dev-135922",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:190997658975:stack/amplify-tsportforio-dev-135922/f91f0160-c1cc-11eb-9312-06b03520c5c7",
+            "AmplifyAppId": "d8zxh29azvksh"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d8zxh29azvksh",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}

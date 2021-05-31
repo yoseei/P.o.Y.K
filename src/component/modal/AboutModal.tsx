@@ -51,9 +51,6 @@ const AboutModal = (props: any) => {
               }}
               onClick={() => closeModal()}
             />
-            {/* <button className={scss.button} onClick={() => closeModal()}>
-              BACK
-            </button> */}
           </div>
         </div>
       ) : (
