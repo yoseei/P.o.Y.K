@@ -18,6 +18,7 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
 import CloseIcon from "@material-ui/icons/Close";
 import Overlay from "./Overlay";
+import AboutModal from "../modal/AboutModal";
 
 const drawerWidth = "30%";
 
@@ -66,7 +67,9 @@ export default function PersistentDrawerRight() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = useState(false),
-    [overlay, setOverlay] = useState(false);
+    [overlay, setOverlay] = useState(false),
+    [showAboutModal, setShowAboutModal] = useState(false),
+    [showHome, setShowHome] = useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -78,8 +81,24 @@ export default function PersistentDrawerRight() {
     setOverlay(false);
   };
 
+  const ShowAboutModal = () => {
+    setShowAboutModal(true);
+    setOpen(false);
+    setOverlay(false);
+  };
+
+  const ShowHome = () => {
+    setShowAboutModal(false);
+    setOpen(false);
+    setOverlay(false);
+  };
   return (
     <div className={classes.root}>
+      <AboutModal
+        showFlag={showAboutModal}
+        setShowAboutModal={setShowAboutModal}
+        style={{ zIndex: "20" }}
+      />
       <Overlay overlayFlag={overlay} />
       <AppBar
         position="fixed"
@@ -122,10 +141,17 @@ export default function PersistentDrawerRight() {
           <div>
             <ul className={scss.rightMenuUl}>
               <li className={scss.rightMenuList}>
-                <p className={classes.rightMenuLink}>HOME</p>
+                <p className={classes.rightMenuLink} onClick={() => ShowHome()}>
+                  HOME
+                </p>
               </li>
               <li className={scss.rightMenuList}>
-                <p className={classes.rightMenuLink}>ABOUT</p>
+                <p
+                  className={classes.rightMenuLink}
+                  onClick={() => ShowAboutModal()}
+                >
+                  ABOUT
+                </p>
               </li>
               <li className={scss.rightMenuList}>
                 <p className={classes.rightMenuLink}>WORKS</p>
