@@ -12,9 +12,9 @@ const Works2Modal = (props: any) => {
       {props.showFlag ? (
         <div className={scss.container}>
           <div className={scss.modalContent}>
-            <div className={scss.imgContainer}>写真2</div>
-            <h2 className={scss.appName}>app</h2>
-            <p className={scss.aboutApp}>test</p>
+            <div className={scss.imgContainer}>App2</div>
+            <h2 className={scss.appName}>app2</h2>
+            <p className={scss.aboutApp}>アプリの説明が入ります。</p>
             <ClickButton
               style={{
                 width: "50%",

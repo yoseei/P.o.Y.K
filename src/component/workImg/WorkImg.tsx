@@ -3,7 +3,7 @@ import scss from "./workImg.module.scss";
 
 interface Props {
   onClick: any;
-  value: number;
+  value: string;
 }
 const WorkImg: React.FC<Props> = (props) => {
   return (

@@ -92,22 +92,22 @@ const About = () => {
       </div>
       <div className={scss.workImgContainer}>
         <div className={scss.workImg}>
-          <WorkImg value={1} onClick={() => ShowWork1Modal()} />
+          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork1Modal()} />
         </div>
         <div className={scss.workImg}>
-          <WorkImg value={2} onClick={() => ShowWork2Modal()} />
+          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork2Modal()} />
         </div>
         <div className={scss.workImg}>
-          <WorkImg value={3} onClick={() => ShowWork3Modal()} />
+          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork3Modal()} />
         </div>
         <div className={scss.workImg}>
-          <WorkImg value={4} onClick={() => ShowWork4Modal()} />
+          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork4Modal()} />
         </div>
         <div className={scss.workImg}>
-          <WorkImg value={5} onClick={() => ShowWork5Modal()} />
+          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork5Modal()} />
         </div>
         <div className={scss.workImg}>
-          <WorkImg value={6} onClick={() => ShowWork6Modal()} />
+          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork6Modal()} />
         </div>
       </div>
     </div>
