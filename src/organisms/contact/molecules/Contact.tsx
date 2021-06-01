@@ -76,7 +76,11 @@ const Contact = () => {
       </div>
       <div className={scss.iconContainer}>
         <ContactMe value={"CONTACT ME"} className={scss.contactMe} />
-        <a href="https://www.instagram.com/?hl=ja">
+        <a
+          href="https://www.instagram.com/?hl=ja"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <InstagramIcon
             style={{
               marginRight: "20px",
@@ -85,7 +89,11 @@ const Contact = () => {
             }}
           />
         </a>
-        <a href="https://twitter.com/yk_engineer">
+        <a
+          href="https://twitter.com/yk_engineer"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <TwitterIcon
             style={{
               marginRight: "20px",
@@ -93,7 +101,11 @@ const Contact = () => {
             }}
           />
         </a>
-        <a href="https://www.facebook.com/yoseei.drums">
+        <a
+          href="https://www.facebook.com/yoseei.drums"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FacebookIcon
             style={{
               marginRight: "20px",
@@ -101,7 +113,11 @@ const Contact = () => {
             }}
           />
         </a>
-        <a href="https://github.com/yoseei">
+        <a
+          href="https://github.com/yoseei"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <GitHubIcon
             style={{
               fontSize: "2rem",
