@@ -13,9 +13,24 @@ import scss from "./contact.module.scss";
 
 const Contact = () => {
   const [showSentMessage, setShowSentMessage] = useState(false);
+  const [name, setName] = useState(""),
+    [email, setEmail] = useState(""),
+    [message, setMessage] = useState("");
 
   const handleShowSentMessage = () => {
     setShowSentMessage(true);
+  };
+
+  const handleNameChange = (e: any) => {
+    setName(e.target.value);
+  };
+
+  const handleEmailChange = (e: any) => {
+    setEmail(e.target.value);
+  };
+
+  const handleMessageChange = (e: any) => {
+    setMessage(e.target.value);
   };
 
   const {
@@ -23,7 +38,34 @@ const Contact = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const onSubmit = (data: any) => {
+    const userName = name;
+    const userEmail = email;
+    const userMessage = message;
+
+    const payload = {
+      text:
+        "お問い合わせがありました\n" +
+        "Name：" +
+        userName +
+        "\n" +
+        "Email：" +
+        userEmail +
+        "\n" +
+        "Message： \n" +
+        userMessage,
+    };
+
+    const url =
+      "https://hooks.slack.com/services/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";
+
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify(payload),
+    }).then(() => {
+      alert("送信が完了しました。追ってご連絡致します！");
+    });
     return handleShowSentMessage();
   };
 
@@ -44,6 +86,7 @@ const Contact = () => {
               required: true,
               maxLength: 80,
             })}
+            onChange={handleNameChange}
           />
           <p className={scss.validateMsg}>
             {errors.Email?.type === "pattern" &&
@@ -59,6 +102,7 @@ const Contact = () => {
               pattern:
                 /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
             })}
+            onChange={handleEmailChange}
           />
           <p className={scss.validateMsg}>
             {errors.Message?.type === "required" && "*Message is required"}
@@ -69,6 +113,7 @@ const Contact = () => {
             {...register("Message", {
               required: true,
             })}
+            onChange={handleMessageChange}
           />
 
           <input className={scss.submitBtn} type="submit" value="Submit" />
