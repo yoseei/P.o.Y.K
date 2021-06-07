@@ -6,7 +6,7 @@
 
 # URL
 
-https://main.d357h8swiak2th.amplifyapp.com/
+https://main.d2gq829xuefjy3.amplifyapp.com/
 
 # 作成した目的
 
