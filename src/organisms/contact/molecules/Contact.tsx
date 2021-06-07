@@ -57,9 +57,6 @@ const Contact = () => {
         userMessage,
     };
 
-    const url =
-      "https://hooks.slack.com/services/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";
-
     fetch(url, {
       method: "POST",
       body: JSON.stringify(payload),
