@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-
+import { WEBHOOK_URL } from "../../../WebhookUrl";
 import ContactMe from "../atoms/ContactMe";
 import SentMessage from "../../../component/modal/sentMessage/SentMessage";
 
@@ -56,9 +56,6 @@ const Contact = () => {
         "Message： \n" +
         userMessage,
     };
-
-    const WEBHOOK_URL =
-      "https://hooks.slack.com/services/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";
 
     /* eslint-disable */
     fetch(WEBHOOK_URL, {
