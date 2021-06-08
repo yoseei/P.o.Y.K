@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-
+import { WEBHOOK_URL } from "../../../WebhookUrl";
 import ContactMe from "../atoms/ContactMe";
 import SentMessage from "../../../component/modal/sentMessage/SentMessage";
 
@@ -57,14 +57,19 @@ const Contact = () => {
         userMessage,
     };
 
-    fetch(url, {
+    /* eslint-disable */
+    fetch(WEBHOOK_URL, {
       method: "POST",
       body: JSON.stringify(payload),
     }).then(() => {
       alert("送信が完了しました。追ってご連絡致します！");
+      setName("");
+      setEmail("");
+      setMessage("");
+      return handleShowSentMessage();
     });
-    return handleShowSentMessage();
   };
+  /* eslint-enable */
 
   return (
     <div className={scss.root}>
