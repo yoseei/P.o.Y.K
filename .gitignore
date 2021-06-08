@@ -43,3 +43,4 @@ amplifytools.xcconfig
 .secret-*
 
 WebhookUrl.js
+package-lock.json
