@@ -1,1 +1,2 @@
-export const WEBHOOK_URL: any = process.env.REACT_APP_WEBHOOK_URL;
+export const WEBHOOK_URL: any =
+  "https://hooks.slack.com/services/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";
