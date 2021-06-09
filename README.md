@@ -23,3 +23,5 @@ https://www.poyk.tk/
 - Amplify
 
 # 機能一覧
+
+- Incoming Webhook を使用した、slack への通知送信

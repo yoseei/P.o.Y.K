@@ -60,6 +60,8 @@ const Contact = () => {
     /* eslint-disable */
     fetch(WEBHOOK_URL, {
       method: "POST",
+      mode: "cors", //とりあえずエラー表示をなくすために記述
+      credentials: "same-origin",
       body: JSON.stringify(payload),
     }).then(() => {
       alert("送信が完了しました。追ってご連絡致します！!");
