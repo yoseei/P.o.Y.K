@@ -62,7 +62,7 @@ const Contact = () => {
       method: "POST",
       body: JSON.stringify(payload),
     }).then(() => {
-      alert("送信が完了しました。追ってご連絡致します！！");
+      alert("送信が完了しました。追ってご連絡致します！");
       setName("");
       setEmail("");
       setMessage("");
