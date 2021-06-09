@@ -6,7 +6,7 @@
 
 # URL
 
-https://main.d2gq829xuefjy3.amplifyapp.com/
+https://www.poyk.tk/
 
 # 作成した目的
 

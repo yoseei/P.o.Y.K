@@ -42,4 +42,4 @@ amplify-gradle-config.json
 amplifytools.xcconfig
 .secret-*
 
-src/WebhookUrl.tsx
+WebhookUrl.tsx
