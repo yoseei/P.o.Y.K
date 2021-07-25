@@ -9,7 +9,9 @@ import Work3Modal from "../../component/modal/worksModal/Work3Modal";
 import Work4Modal from "../../component/modal/worksModal/Work4Modal";
 import Work5Modal from "../../component/modal/worksModal/Work5Modal";
 import Work6Modal from "../../component/modal/worksModal/Work6Modal";
-
+import PortFolioPhoto from "./portfolio.jpg";
+import WeatherAppPhoto from "./weatherApp.jpg";
+import WhitePhoto from "./white.jpg";
 const About = () => {
   const [showAboutModal, setShowAboutModal] = useState(false),
     [showWork1Modal, setShowWork1Modal] = useState(false),
@@ -92,22 +94,52 @@ const About = () => {
       </div>
       <div className={scss.workImgContainer}>
         <div className={scss.workImg}>
-          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork1Modal()} />
+          <WorkImg
+            alt={""}
+            src={PortFolioPhoto}
+            value={""}
+            onClick={() => ShowWork1Modal()}
+          />
         </div>
         <div className={scss.workImg}>
-          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork2Modal()} />
+          <WorkImg
+            alt={""}
+            src={WeatherAppPhoto}
+            value={""}
+            onClick={() => ShowWork2Modal()}
+          />
         </div>
         <div className={scss.workImg}>
-          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork3Modal()} />
+          <WorkImg
+            alt={""}
+            src={WhitePhoto}
+            value={"Coming Soon..."}
+            onClick={() => ShowWork3Modal()}
+          />
         </div>
         <div className={scss.workImg}>
-          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork4Modal()} />
+          <WorkImg
+            alt={""}
+            src={WhitePhoto}
+            value={"Coming Soon..."}
+            onClick={() => ShowWork4Modal()}
+          />
         </div>
         <div className={scss.workImg}>
-          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork5Modal()} />
+          <WorkImg
+            alt={""}
+            src={WhitePhoto}
+            value={"Coming Soon..."}
+            onClick={() => ShowWork5Modal()}
+          />
         </div>
         <div className={scss.workImg}>
-          <WorkImg value={"Coming Soon..."} onClick={() => ShowWork6Modal()} />
+          <WorkImg
+            alt={""}
+            src={WhitePhoto}
+            value={"Coming Soon..."}
+            onClick={() => ShowWork6Modal()}
+          />
         </div>
       </div>
     </div>
