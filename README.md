@@ -6,7 +6,7 @@
 
 # URL
 
-https://www.poyk.tk/
+https://main.d3k7tmlzmk2rlu.amplifyapp.com/
 
 # 作成した目的
 
