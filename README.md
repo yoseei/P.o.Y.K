@@ -4,9 +4,6 @@
 
 <img width="1440" alt="スクリーンショット 2021-06-01 22 25 59" src="https://user-images.githubusercontent.com/71750637/120331339-a2100880-c328-11eb-9228-3c4852267de8.png">
 
-# URL
-
-https://main.d3k7tmlzmk2rlu.amplifyapp.com/
 
 # 作成した目的
 
